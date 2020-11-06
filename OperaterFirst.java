@@ -45,7 +45,7 @@ public class OperaterFirst{
                 System.out.println("E");
                 break;
             }
-            if(isVt(next)){
+            if(!isVt(next)){
                 System.out.println("E");
                 break;
             }
