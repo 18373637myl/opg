@@ -1,0 +1,17 @@
+{
+  "name": "golem1",
+  "title": "Golem",
+  "tags": ["test", "python"],
+  "testGroups": {
+    "default": ["succ"]
+  },
+  "vars": {
+    "$src": "py",
+    "$bin": "pyc",
+    "$stdin": "in",
+    "$stdout": "out"
+  },
+  "run": ["cat $stdin | python ./golem.py $bin"],
+  "binds": [],
+  "mapped_dir": { "from": "src/", "to": "/src/", "readonly": true }
+}
