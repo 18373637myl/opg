@@ -1,5 +1,5 @@
 [jobs.opg]
 image = { source = "dockerfile", path = ".", tag = "my-pascal-lexer" }
 run = [
-  "java my.path.MyClass $input",
+  "java Test $input",
 ]
