@@ -49,7 +49,7 @@ public class OperaterFirst{
                 break;
             }
 
-            if(isVt(next){
+            if(isVt(next)){
                 int prio_2 = gethash(next);
             }
             else{
