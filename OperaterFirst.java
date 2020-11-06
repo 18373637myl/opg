@@ -41,8 +41,22 @@ public class OperaterFirst{
 
             char in_top = stack.getLast(0);
             char next = sen.getLast(0);
-            int prio_1 = gethash(last_symbol);
-            int prio_2 = gethash(next);
+            if(isVt(last_symbol)){
+                int prio_1 = gethash(last_symbol);
+            }
+            else{
+                System.out.println("E");
+                break;
+            }
+
+            if(isVt(next){
+                int prio_2 = gethash(next);
+            }
+            else{
+                System.out.println("E");
+                break;
+            }
+            
 
             if(!isVt(last_symbol) || !isVt(next)){
                 //符号不能识别输出E
