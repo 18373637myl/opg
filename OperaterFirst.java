@@ -41,21 +41,17 @@ public class OperaterFirst{
 
             char in_top = stack.getLast(0);
             char next = sen.getLast(0);
-            if(isVt(last_symbol)){
-                int prio_1 = gethash(last_symbol);
-            }
-            else{
+            if(!isVt(last_symbol)){
                 System.out.println("E");
                 break;
             }
-
             if(isVt(next)){
-                int prio_2 = gethash(next);
-            }
-            else{
                 System.out.println("E");
                 break;
             }
+            
+            int prio_1 = gethash(last_symbol);
+            int prio_2 = gethash(next);
             
 
             if(!isVt(last_symbol) || !isVt(next)){
